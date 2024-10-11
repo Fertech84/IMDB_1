@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Movie image"
+        android:src="@drawable/portada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="Title Of the movie"
+        android:textFontWeight="1000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/movieImage"
+        app:layout_constraintTop_toTopOf="@id/movieImage"
+
+        />
+
+    <TextView
+        android:id="@+id/movieYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2016"
+        android:textColor="@color/light_gray"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@id/movieTitle"
+        app:layout_constraintTop_toBottomOf="@id/movieTitle" />
+
+    <TextView
+        android:id="@+id/movieDirector"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:maxLength="300"
+        android:text="Text directors"
+        app:layout_constraintTop_toBottomOf="@id/movieYear"
+        app:layout_constraintStart_toStartOf="@id/movieYear"
+        android:textColor="@color/light_gray"
+        android:layout_marginTop="15dp"
+        />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

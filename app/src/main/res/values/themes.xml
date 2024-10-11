@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IMDB_1" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="Theme.IMDB_1" parent="Base.Theme.IMDB_1">
+        <item name="android:windowSplashScreenBackground">@color/main_yellow</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_imdb_logo_init_foreground</item>
+    </style>
+
+
+</resources>

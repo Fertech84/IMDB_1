@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_text_field_border_radius">20dp</dimen>
+    <dimen name="main_text_field_vertical_padding">20dp</dimen>
+    <dimen name="main_text_field_side_margin">50dp</dimen>
+    <dimen name="main_text_field_side_padding">30dp</dimen>
+    <dimen name="login_label_text_size">20sp</dimen>
+    <dimen name="login_text_field_vertical_margin">50dp</dimen>
+    <dimen name="login_logo_top_margin">50dp</dimen>
+    <dimen name="login_icons_side_margin">120dp</dimen>
+</resources>

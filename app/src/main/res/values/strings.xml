@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IMDB_1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_title">IMDb</string>
+    <string name="login_username_label">Usuario</string>
+    <string name="login_password_label">Contraseña</string>
+    <string name="forgot_the_password">¿Olvidaste la contraseña?</string>
+    <string name="Login_button_text">Login</string>
+    <string name="create_account_title">Crear una cuenta</string>
+    <string name="imdb_logo_content_description">Logo de IMDB</string>
+    <string name="signup_name_label_for">Campo de texto para nombre</string>
+    <string name="back_button">Regresar</string>
+</resources>

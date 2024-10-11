@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_yellow"
+    tools:context=".Login" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_logo_top_margin"
+        android:contentDescription="IMDB Logo"
+        android:src="@drawable/imdb_logo_2016_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_text_field_side_margin"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/main_text_field_side_margin"
+        android:background="@drawable/main_text_field"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/main_text_field_side_padding"
+        android:paddingTop="@dimen/main_text_field_vertical_padding"
+        android:paddingEnd="@dimen/main_text_field_side_padding"
+        android:paddingBottom="@dimen/main_text_field_vertical_padding"
+        android:textColor="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_text_field_side_margin"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="@dimen/main_text_field_side_margin"
+        android:background="@drawable/main_text_field"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/main_text_field_side_padding"
+        android:paddingTop="@dimen/main_text_field_vertical_padding"
+        android:paddingEnd="@dimen/main_text_field_side_padding"
+        android:paddingBottom="@dimen/main_text_field_vertical_padding"
+        android:textColor="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/login_username_label"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/login_label_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintStart_toStartOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/login_password_label"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/login_label_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/forgot_the_password"
+        android:textColor="@color/dark_gray"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <android.widget.Button
+        android:id="@+id/loginButton"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotobold"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_text_field_side_margin"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/main_text_field_side_margin"
+        android:background="@drawable/light_gray_button"
+        android:paddingTop="@dimen/main_text_field_vertical_padding"
+        android:paddingBottom="@dimen/main_text_field_vertical_padding"
+        android:text="@string/Login_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
+
+    <ImageButton
+        android:id="@+id/appleLogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/login_icons_side_margin"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle_app_background"
+        android:contentDescription="Login with Apple"
+        android:padding="10dp"
+        android:src="@drawable/apple_13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageButton
+        android:id="@+id/facebookLogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle_app_background"
+        android:padding="10dp"
+        android:contentDescription="Login with Facebook"
+        android:src="@drawable/facebook_2020_2_1"
+        app:layout_constraintEnd_toStartOf="@+id/googleLogin"
+        app:layout_constraintStart_toEndOf="@+id/appleLogin"
+        app:layout_constraintTop_toTopOf="@+id/appleLogin" />
+
+    <ImageButton
+        android:id="@+id/googleLogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="@dimen/login_icons_side_margin"
+        android:contentDescription="Login with google"
+        android:background="@drawable/circle_app_background"
+        android:padding="10dp"
+        android:src="@drawable/google_g_2015"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/facebookLogin" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/robotolightitalic"
+        android:text="Ó podés ingresar con"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/login_label_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tenés una cuenta?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/googleLogin"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/dark_gray"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/robotoregular"
+        android:textSize="@dimen/login_label_text_size"
+
+        />
+
+    <TextView
+        android:id="@+id/signupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regístrate"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintStart_toEndOf="@id/tv3"
+        app:layout_constraintTop_toTopOf="@id/tv3"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/robotobold"
+        android:textSize="@dimen/login_label_text_size"
+
+        />
+
+    <TextView
+        android:id="@+id/textInvitado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/signupButton"
+        android:text="Continuar como invitado"
+        android:fontFamily="@font/robotobold"
+        android:textSize="@dimen/login_label_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/dark_gray"
+        android:layout_marginEnd="0dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
